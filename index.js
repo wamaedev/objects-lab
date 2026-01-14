@@ -11,3 +11,9 @@ function updateEmployeeWithKeyAndValue(object, key, value){
   };
   return updatedEmployee;
 }
+// function updateEmployeeWithKeyAndValue(object, key, value){
+//   return {
+//     ...object,
+//     [key]: value
+//   };
+// }
