@@ -17,3 +17,16 @@ function updateEmployeeWithKeyAndValue(object, key, value){
 //     [key]: value
 //   };
 // }
+
+function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
+  employee[key] = value;
+  return employee;
+}
+
+function deleteFromEmployeeByKey(employee, key){
+  const deletedEmployee = {
+    ...employee
+  };
+  delete deletedEmployee[key];
+  return deletedEmployee;
+}
