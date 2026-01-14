@@ -30,3 +30,8 @@ function deleteFromEmployeeByKey(employee, key){
   delete deletedEmployee[key];
   return deletedEmployee;
 }
+
+function destructivelyDeleteFromEmployeeByKey(employee, key){
+  delete employee[key];
+  return employee;
+}
